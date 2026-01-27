@@ -1,0 +1,45 @@
+# Allow all normal crawlers to access the site
+User-agent: *
+Allow: /
+
+# Block crawling of URLs with query parameters (except search)
+Disallow: /*?*
+Allow: /search?*
+
+# Keep non-public areas out of crawlers
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://thecurrentsource.net/sitemap.xml
+
+# Optional: opt-out of AI/data-training crawlers (best effort)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /

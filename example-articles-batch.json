@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Europe Accelerates Offshore Wind Development",
+    "description": "European Union announces €50 billion investment plan to triple offshore wind capacity by 2030.",
+    "content": "The European Union has unveiled an ambitious €50 billion investment plan to dramatically expand offshore wind energy production across member states.\n\nThe initiative aims to triple current offshore wind capacity from 15 GW to 45 GW by 2030, positioning Europe as the global leader in offshore wind technology and deployment.\n\nEU Energy Commissioner emphasized that offshore wind will play a crucial role in achieving the bloc's goal of climate neutrality by 2050. \"This investment represents not just an environmental commitment, but an economic opportunity to create hundreds of thousands of jobs across the continent,\" she stated.\n\nThe plan includes streamlined permitting processes, enhanced grid infrastructure, and dedicated funding for port facilities capable of handling massive wind turbine components. Several North Sea countries have already signed memorandums of understanding to coordinate cross-border offshore wind projects.",
+    "category": "wind",
+    "region": "Europe",
+    "tags": ["Wind Energy", "Offshore Wind", "Europe", "Investment", "EU Policy"],
+    "source": "European Commission",
+    "featured": false
+  },
+  {
+    "title": "Hydrogen Fuel Cell Trucks Enter Mass Production",
+    "description": "Major automaker begins commercial production of hydrogen-powered heavy-duty trucks for long-haul transportation.",
+    "content": "A leading automotive manufacturer has announced the start of commercial production for its hydrogen fuel cell heavy-duty trucks, marking a significant milestone in the decarbonization of freight transport.\n\nThe company's new facility in southern Germany will produce up to 10,000 hydrogen trucks annually, with initial deliveries scheduled for Q2 2025. The trucks offer a range of 800 kilometers on a single tank and can be refueled in under 15 minutes.\n\nSeveral major logistics companies have already placed orders totaling over 2,000 vehicles. The trucks are designed for long-haul routes where battery-electric vehicles face range and charging time limitations.\n\nThe manufacturer has partnered with energy companies to develop a network of hydrogen refueling stations along major European freight corridors. \"This is the beginning of a new era for sustainable logistics,\" said the company's CEO during the production launch event.",
+    "category": "hydrogen",
+    "region": "Europe",
+    "tags": ["Hydrogen", "Transportation", "Fuel Cells", "Trucks", "Logistics"],
+    "source": "Automotive Industry News",
+    "featured": false
+  },
+  {
+    "title": "US Passes Landmark Grid Modernization Bill",
+    "description": "Congress approves $100 billion infrastructure package to upgrade America's aging electrical grid and enable renewable energy integration.",
+    "content": "The United States Congress has passed comprehensive legislation allocating $100 billion for grid modernization over the next decade.\n\nThe Grid Resilience and Renewable Integration Act focuses on replacing aging transmission infrastructure, expanding interstate power transmission capacity, and deploying advanced grid management technologies.\n\nKey provisions include funding for smart grid technologies, energy storage systems, and high-voltage direct current transmission lines that can efficiently transport renewable energy from generation sites to population centers.\n\nThe legislation also establishes streamlined federal permitting for transmission projects that cross multiple states, addressing a long-standing bottleneck in grid expansion.\n\nEnergy analysts project that the investment will enable the integration of an additional 200 GW of renewable energy capacity while improving grid reliability and reducing the frequency of power outages.",
+    "category": "Policy",
+    "region": "North America",
+    "tags": ["Grid", "Policy", "Infrastructure", "United States", "Transmission"],
+    "source": "US Department of Energy",
+    "featured": true
+  }
+]

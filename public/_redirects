@@ -1,0 +1,4 @@
+# Static pages first, then fallback to React SPA
+# This serves pre-generated HTML for better SEO, but uses React for dynamic routes
+/articles/*  /articles/:splat/index.html  200
+/*           /index.html  200

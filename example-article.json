@@ -1,0 +1,13 @@
+{
+  "title": "New Breakthrough in Solar Technology",
+  "description": "Scientists develop solar panels with 50% higher efficiency, promising to revolutionize renewable energy generation worldwide.",
+  "content": "In a groundbreaking development, researchers at the International Solar Energy Institute have announced a significant breakthrough in photovoltaic technology.\n\nThe new solar panels utilize a novel multi-junction cell design that captures a broader spectrum of sunlight, resulting in efficiency gains of up to 50% compared to traditional silicon-based panels. This advancement could dramatically reduce the cost per watt of solar energy and accelerate the global transition to renewable power.\n\nDr. Sarah Chen, lead researcher on the project, explained that the technology combines perovskite materials with traditional silicon cells in an innovative tandem structure. \"We've essentially created a solar cell that can harvest energy from wavelengths that conventional panels simply miss,\" she stated.\n\nThe breakthrough comes at a critical time as countries worldwide are scaling up renewable energy infrastructure to meet climate targets. Industry experts predict that commercial production of these advanced panels could begin within 18-24 months.\n\nMajor solar manufacturers have already expressed interest in licensing the technology. The research team estimates that widespread adoption could reduce global carbon emissions by an additional 2 gigatons annually by 2035.\n\nThe technology has been successfully tested in various climate conditions, from desert environments to cloudy regions, demonstrating consistent performance improvements across all scenarios.",
+  "category": "technology",
+  "region": "Global",
+  "imageUrl": "/images/articles/solar-breakthrough-2025.jpg",
+  "tags": ["Solar", "Innovation", "Technology", "Renewable Energy", "Climate"],
+  "url": "https://example.com/solar-breakthrough",
+  "source": "International Solar Energy Institute",
+  "author": "Dr. Sarah Chen",
+  "featured": true
+}

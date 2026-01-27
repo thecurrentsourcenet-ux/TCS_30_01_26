@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>TheCurrentSource - Plugged Into Energy News | Comprehensive Energy Information Hub</title>
+    <meta name="title" content="TheCurrentSource - Plugged Into Energy News | Comprehensive Energy Information Hub" />
+    <meta name="description" content="Your comprehensive energy information hub. We gather and organize energy news from across all sectors - renewable energy, policy updates, market developments, and industry innovations. Free weekly newsletter with expert insights." />
+    <meta name="keywords" content="energy news, renewable energy, energy policy, energy markets, clean energy, solar energy, wind energy, energy storage, energy transition, energy newsletter, energy insights, energy analysis" />
+    <meta name="author" content="TheCurrentSource" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thecurrentsource.net/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thecurrentsource.net/" />
+    <meta property="og:title" content="TheCurrentSource - Plugged Into Energy News" />
+    <meta property="og:description" content="Your comprehensive energy information hub. Get weekly energy news from all sectors delivered to your inbox." />
+    <meta property="og:image" content="https://thecurrentsource.net/og-image.jpg" />
+    <meta property="og:site_name" content="TheCurrentSource" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://thecurrentsource.net/" />
+    <meta property="twitter:title" content="TheCurrentSource - Plugged Into Energy News" />
+    <meta property="twitter:description" content="Your comprehensive energy information hub. Get weekly energy news from all sectors delivered to your inbox." />
+    <meta property="twitter:image" content="https://thecurrentsource.net/og-image.jpg" />
+    <meta property="twitter:creator" content="@thecurrentsource" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#0077CC" />
+    <meta name="msapplication-TileColor" content="#0077CC" />
+    <meta name="application-name" content="TheCurrentSource" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://foazkhcfcjcruwyjsybx.supabase.co" />
+    <link rel="dns-prefetch" href="https://foazkhcfcjcruwyjsybx.supabase.co" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" /></noscript>
+
+    <!-- AdSense + Consent Mode v2 Setup -->
+    <script>
+      // CRITICAL: Initialize AdSense NPA flag BEFORE script loads
+      window.adsbygoogle = window.adsbygoogle || [];
+
+      // Check stored consent
+      var storedConsent = localStorage.getItem('consent.v1') || 'unset';
+
+      // EEA Compliance: Request NPA by default (until user accepts)
+      // This ensures ads serve even when consent is denied
+      if (storedConsent !== 'accepted') {
+        window.adsbygoogle.requestNonPersonalizedAds = 1;
+      } else {
+        window.adsbygoogle.requestNonPersonalizedAds = 0;
+      }
+
+      // GA4 stub (must be before consent default)
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+
+      // Set consent default BEFORE any scripts load
+      gtag('consent', 'default', {
+        'ad_storage': storedConsent === 'accepted' ? 'granted' : 'denied',
+        'analytics_storage': storedConsent === 'accepted' ? 'granted' : 'denied',
+        'ad_user_data': storedConsent === 'accepted' ? 'granted' : 'denied',
+        'ad_personalization': storedConsent === 'accepted' ? 'granted' : 'denied',
+        'functionality_storage': 'granted',
+        'security_storage': 'granted'
+      });
+    </script>
+
+    <!-- Google AdSense (loads with NPA flag already set) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4468932841277540" crossorigin="anonymous"></script>
+
+    <!-- GA4 Load (deferred) -->
+    <script>
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-6H43PER7RC';
+        script.async = true;
+        document.head.appendChild(script);
+
+        script.onload = function() {
+          gtag('js', new Date());
+          gtag('config', 'G-6H43PER7RC', { anonymize_ip: true, send_page_view: false });
+
+          // Fire page_view if already accepted
+          if (localStorage.getItem('consent.v1') === 'accepted') {
+            gtag('event', 'page_view', {
+              page_title: document.title,
+              page_location: location.href,
+              page_path: location.pathname
+            });
+          }
+        };
+      });
+    </script>
+
+    <!-- Bundles dell'app -->
+  <!-- Vite dev: entra dal file sorgente -->
+<script type="module" src="/src/main.jsx"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Cookie banner (accept/reject) -->
+    <div id="cookie-banner" style="position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #eee;padding:12px;box-shadow:0 -6px 20px rgba(0,0,0,.08);display:none;z-index:9999;">
+      <div style="max-width:900px;margin:0 auto;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+        <div style="font-size:14px;line-height:1.4;">
+          We use cookies for basic site functions and, with your consent, ads/analytics.
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button id="cc-reject" style="padding:8px 12px;border:1px solid #ddd;background:#f5f5f5;border-radius:8px;cursor:pointer;">Reject non-essential</button>
+          <button id="cc-accept" style="padding:8px 12px;border:0;background:#111;color:#fff;border-radius:8px;cursor:pointer;">Accept all</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var KEY = 'consent.v1';
+        function get() { return localStorage.getItem(KEY) || 'unset'; }
+        function set(v){ localStorage.setItem(KEY, v); }
+        function showBanner() {
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'block';
+        }
+        function hideBanner() {
+          var banner = document.getElementById('cookie-banner');
+          if (banner) banner.style.display = 'none';
+        }
+
+        // Show banner if undecided
+        if (get() === 'unset') showBanner();
+
+        // Accept handler: Enable personalized ads + reload
+        function handleAccept() {
+          set('accepted');
+          hideBanner();
+
+          // Update AdSense NPA flag (allow personalized)
+          if (window.adsbygoogle) {
+            window.adsbygoogle.requestNonPersonalizedAds = 0;
+          }
+
+          // Update consent
+          if (typeof gtag === 'function') {
+            gtag('consent', 'update', {
+              'ad_storage': 'granted',
+              'analytics_storage': 'granted',
+              'ad_user_data': 'granted',
+              'ad_personalization': 'granted'
+            });
+          }
+
+          // CRITICAL: Reload page to refresh ads with new consent
+          // This is the most reliable method for SPA + Auto Ads
+          setTimeout(function() {
+            window.location.reload();
+          }, 100);
+        }
+
+        // Reject handler: Keep NPA ads only
+        function handleReject() {
+          set('rejected');
+          hideBanner();
+
+          // Ensure NPA flag stays enabled
+          if (window.adsbygoogle) {
+            window.adsbygoogle.requestNonPersonalizedAds = 1;
+          }
+
+          // Update consent to denied
+          if (typeof gtag === 'function') {
+            gtag('consent', 'update', {
+              'ad_storage': 'denied',
+              'analytics_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied'
+            });
+          }
+
+          // Reload to ensure NPA ads load fresh
+          setTimeout(function() {
+            window.location.reload();
+          }, 100);
+        }
+
+        // Attach button handlers
+        var acceptBtn = document.getElementById('cc-accept');
+        var rejectBtn = document.getElementById('cc-reject');
+        if (acceptBtn) acceptBtn.onclick = handleAccept;
+        if (rejectBtn) rejectBtn.onclick = handleReject;
+
+        // Expose handlers globally for React components
+        window.acceptConsent = handleAccept;
+        window.rejectConsent = handleReject;
+
+        // Listen for consent changes from app
+        window.addEventListener('consentchange', function(e){
+          if (e.detail === 'accepted') handleAccept();
+          if (e.detail === 'rejected') handleReject();
+        });
+      })();
+    </script>
+
+    <!-- LinkedIn Badge Script - Load on interaction -->
+    <script>
+      let linkedInLoaded = false;
+      function loadLinkedIn() {
+        if (!linkedInLoaded) {
+          linkedInLoaded = true;
+          const script = document.createElement('script');
+          script.src = 'https://platform.linkedin.com/badges/js/profile.js';
+          script.async = true;
+          document.body.appendChild(script);
+        }
+      }
+      window.addEventListener('scroll', loadLinkedIn, { once: true, passive: true });
+      window.addEventListener('touchstart', loadLinkedIn, { once: true, passive: true });
+      setTimeout(loadLinkedIn, 3000);
+    </script>
+  </body>
+</html>

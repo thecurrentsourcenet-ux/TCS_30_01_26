@@ -1,0 +1,47 @@
+{
+  "name": "thecurrentsource",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build-ssg.js && node scripts/download-images.js && node scripts/fix-missing-slugs.js && node scripts/generate-static-pages.js && node scripts/generate-sitemap.js && tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "generate-types": "echo 'Database types are manually maintained in src/lib/database.types.ts'",
+    "build:ssg": "node scripts/build-ssg.js",
+    "build:sitemap": "node scripts/generate-sitemap.js",
+    "static:generate": "node scripts/build-ssg.js && node scripts/download-images.js && node scripts/fix-missing-slugs.js && node scripts/generate-static-pages.js",
+    "article:add": "node scripts/add-article.js",
+    "article:add-interactive": "node scripts/add-article-interactive.js",
+    "article:batch": "node scripts/add-articles-batch.js",
+    "publish": "npm run static:generate && npm run build:sitemap && npm run build"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^3.3.0",
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/supabase-js": "^2.42.5",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.368.0",
+    "react": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^17.2.1",
+    "eslint": "^8.57.0",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.3",
+    "terser": "^5.31.0",
+    "typescript": "^5.4.5",
+    "vite": "^7.0.5",
+    "xmlbuilder2": "^3.1.1"
+  }
+}
