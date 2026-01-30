@@ -28,6 +28,7 @@ const RwandaInfographic = lazy(() => import('./pages/infographics/Rwanda'));
 const UruguayInfographic = lazy(() => import('./pages/infographics/Uruguay'));
 const GreenlandInfographic = lazy(() => import('./pages/infographics/Greenland'));
 const ThankYou = lazy(() => import('./pages/ThankYou'));
+const DavosReport = lazy(() => import('./pages/DavosReport'));
 
 // Load Layout immediately since it's needed for all routes
 import Layout from './components/Layout';
@@ -68,6 +69,7 @@ function App() {
                   <Route path="/login" element={<Login />} />
                   <Route path="/newsletter" element={<PricingPlans />} />
                   <Route path="/thank-you" element={<ThankYou />} />
+                  <Route path="/davos-2026-report" element={<DavosReport />} />
                   <Route
                     path="/profile"
                     element={
