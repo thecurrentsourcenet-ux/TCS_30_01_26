@@ -20,7 +20,6 @@ const Profile = lazy(() => import('./pages/Profile'));
 const PricingPlans = lazy(() => import('./components/PricingPlans'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const HydrogenFutureComingSoon = lazy(() => import('./pages/HydrogenFutureComingSoon'));
-const YearEndPresentation = lazy(() => import('./pages/YearEndPresentation'));
 const HydrogenBook = lazy(() => import('./pages/HydrogenBook'));
 const Dawn2009 = lazy(() => import('./pages/hydrogen-book/Dawn2009'));
 const Infographics = lazy(() => import('./pages/Infographics'));
@@ -54,7 +53,6 @@ function App() {
                   <Route path="/about" element={<About />} />
                   <Route path="/privacy" element={<Privacy />} />
                   <Route path="/technical/future" element={<HydrogenFutureComingSoon />} />
-                  <Route path="/year-end-presentation" element={<YearEndPresentation />} />
                   <Route path="/hydrogen-book" element={<HydrogenBook />} />
                   <Route path="/hydrogen/2009-dawn-of-a-new-hydrogen-era" element={<Dawn2009 />} />
                   <Route path="/infographics" element={<Infographics />} />
