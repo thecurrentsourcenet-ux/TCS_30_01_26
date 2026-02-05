@@ -40,7 +40,7 @@ export default function BrazilInfographic() {
         <meta property="og:title" content="Brazil's Green Energy Evolution: 92% Clean Electricity" />
         <meta property="og:description" content="Interactive infographic showcasing Brazil's shift from hydropower dominance to a diversified renewable energy mix with solar, wind, and emerging green hydrogen sector." />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://www.thecurrentsource.net/infographics/brasil_infographic_2026_the_current_source.jpg" />
+        <meta property="og:image" content="https://www.thecurrentsource.net/images/infographics/brasil_infographic_2026_the_current_source.jpg" />
       </Helmet>
 
       <BreadcrumbNavigation
@@ -61,7 +61,7 @@ export default function BrazilInfographic() {
         </header>
 
         <InfographicDisplay
-          imageSrc="/infographics/brasil_infographic_2026_the_current_source.jpg"
+          imageSrc="/images/infographics/brasil_infographic_2026_the_current_source.jpg"
           imageAlt="Brazil renewable energy infographic displaying a 92% clean electricity generation mix dominated by hydropower but featuring a rapidly expanding share of solar and wind. Visuals include the firm capacity role of natural gas backups and energy storage to mitigate drought risks, transmission infrastructure connecting the wind-rich Northeast to the Southeast, and emerging green hydrogen hubs at industrial ports. The graphic highlights the privatization of Eletrobras and the opening of the retail energy market as key drivers for private investment."
           country="Brazil"
           year="Current Status & Achievements"
