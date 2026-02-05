@@ -2194,6 +2194,557 @@ export default function Legislation({ countryId }: LegislationProps) {
     );
   }
 
+  // Brazil-specific legislation content
+  if (selectedCountry === 'br') {
+    return (
+      <div className="max-w-6xl mx-auto space-y-8">
+        {/* Page Header */}
+        <div className="bg-gradient-to-br from-green-50 to-yellow-50 rounded-xl p-8 border border-green-100">
+          <div className="flex items-center justify-between gap-4 mb-6">
+            <div className="flex items-center gap-4">
+              <div className="bg-green-100 p-3 rounded-lg">
+                <Scale className="h-8 w-8 text-green-600" />
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-gray-800">Brazil Energy Policy & Regulation</h1>
+                <p className="text-gray-600 mt-2">Comprehensive coverage of Brazil's climate commitments, renewable expansion, and energy market reforms</p>
+              </div>
+            </div>
+            {/* Mobile: Show compact country selector */}
+            <div className="md:hidden relative flex-shrink-0">
+              <select
+                value={selectedCountry}
+                onChange={(e) => setSelectedCountry(e.target.value)}
+                className="px-3 py-2 border-2 border-green-400 rounded-lg bg-white text-gray-800 font-medium appearance-none pr-8 cursor-pointer hover:bg-green-50 transition-colors text-sm"
+              >
+                {countries.map((country) => (
+                  <option key={country.id} value={country.id}>
+                    {country.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronRight className="h-4 w-4 text-green-600 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none rotate-90" />
+            </div>
+          </div>
+        </div>
+
+        <EnergyPolicyAd />
+
+        <section id="br" className="scroll-mt-24">
+          <div className="space-y-8">
+            {/* Net Zero & Climate Targets */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Target className="h-5 w-5 text-green-600" />
+                Net Zero & Climate Targets
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-5 border border-green-100">
+                  <h4 className="font-medium text-gray-800 mb-3">2050 Net-Zero Goal</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Brazil has pledged to achieve climate neutrality by 2050, reiterating this target in its updated 2023 NDC.
+                    The commitment is backed by legislation in progress to make net-zero by 2050 a statutory requirement.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-3 mt-4">
+                    <div className="bg-white rounded-lg p-3 border border-green-200">
+                      <div className="text-sm font-medium text-green-700 mb-1">2025 Target</div>
+                      <div className="text-xl font-bold text-gray-800">37% Cut</div>
+                      <div className="text-xs text-gray-600">vs. 2005 levels</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-green-200">
+                      <div className="text-sm font-medium text-green-700 mb-1">2030 Target</div>
+                      <div className="text-xl font-bold text-gray-800">50% Cut</div>
+                      <div className="text-xs text-gray-600">vs. 2005 levels</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-green-200">
+                      <div className="text-sm font-medium text-green-700 mb-1">2035 Target</div>
+                      <div className="text-xl font-bold text-gray-800">59-67% Cut</div>
+                      <div className="text-xs text-gray-600">vs. 2005 levels</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-2">Ecological Transformation Plan</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    The 2023 framework links climate action with development goals, seeking a just transition through
+                    measures spanning clean energy, sustainable farming, and green finance. Achieving these targets requires
+                    economy-wide action, especially curbing deforestation and emissions from agriculture and energy.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Renewable & Low-Carbon Power */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-yellow-600" />
+                Renewable & Low-Carbon Power
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-lg p-5 border border-yellow-100">
+                  <h4 className="font-medium text-gray-800 mb-3">92% Renewable Electricity</h4>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Brazil's power sector is already one of the cleanest in the world, with about 92% of electricity from
+                    renewable sources, thanks to extensive hydroelectric capacity complemented by growing wind and solar generation.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-yellow-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">2030 Projections</h5>
+                      <ul className="space-y-2 text-gray-600 text-sm">
+                        <li>• Solar PV: ~47 GW capacity</li>
+                        <li>• Wind: ~31 GW capacity</li>
+                        <li>• Actual deployment outpacing targets</li>
+                        <li>• IEA projects 115 GW solar, 40 GW wind by 2028</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-yellow-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Key Developments</h5>
+                      <ul className="space-y-2 text-gray-600 text-sm">
+                        <li>• Regular energy auctions for new capacity</li>
+                        <li>• Offshore wind framework established (2022)</li>
+                        <li>• Angra 3 nuclear reactor by 2026</li>
+                        <li>• Gas and biomass for renewable backup</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Carbon Pricing & Market Mechanisms */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <TrendingUp className="h-5 w-5 text-blue-600" />
+                Carbon Pricing & Market Mechanisms
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-5 border border-blue-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Brazilian Emissions Trading System (SBCE)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    In late 2024, Congress approved Brazil's first regulated cap-and-trade program. Once enacted, the SBCE
+                    will set gradually declining emission caps on major sectors and allow trading of allowances among the
+                    largest sources of GHGs.
+                  </p>
+                  <div className="bg-white rounded-lg p-4 border border-blue-200 mt-3">
+                    <h5 className="font-semibold text-gray-800 mb-2">RenovaBio Program</h5>
+                    <p className="text-gray-600 text-sm mb-2">
+                      National Biofuels Policy imposes carbon-intensity reduction targets on fuel distributors through CBIO credits:
+                    </p>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• 11.37% cut in transport fuel emissions by 2034 (vs. 2018)</li>
+                      <li>• 72.5 million CBIOs required in 2034</li>
+                      <li>• Voluntary offset market in forestry</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Energy Efficiency & Buildings */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-purple-600" />
+                Energy Efficiency & Buildings
+              </h3>
+              <div className="space-y-4">
+                <p className="text-gray-600 leading-relaxed">
+                  The latest PDE 2034 sets a goal to reduce Brazil's projected energy consumption by about 7% through
+                  efficiency measures by 2034, equivalent to the annual usage of major industrial sectors like steel and cement.
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-100">
+                    <h4 className="font-semibold text-gray-800 mb-2">Buildings</h4>
+                    <ul className="space-y-2 text-gray-600 text-sm">
+                      <li>• PBE Edifica voluntary rating system</li>
+                      <li>• Incentives for efficient construction</li>
+                      <li>• PROCEL appliance labeling program</li>
+                      <li>• Tightening equipment standards</li>
+                    </ul>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-100">
+                    <h4 className="font-semibold text-gray-800 mb-2">Industry</h4>
+                    <ul className="space-y-2 text-gray-600 text-sm">
+                      <li>• Modernizing motors, boilers, processes</li>
+                      <li>• Green financing from BNDES</li>
+                      <li>• Demand response solutions</li>
+                      <li>• Smart grid deployment</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Security of Supply & Energy Independence */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Globe className="h-5 w-5 text-red-600" />
+                Security of Supply & Energy Independence
+              </h3>
+              <div className="space-y-4">
+                <p className="text-gray-600 leading-relaxed">
+                  Brazil is energy-independent in many respects – a net exporter of oil and biofuels with huge hydropower
+                  reservoirs providing energy security.
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-lg p-4 border border-red-100">
+                    <h4 className="font-semibold text-gray-800 mb-2">Oil & Gas Outlook</h4>
+                    <ul className="space-y-2 text-gray-600 text-sm">
+                      <li>• Peak production: ~5.3 million barrels/day by 2030</li>
+                      <li>• Pre-salt offshore fields driving output</li>
+                      <li>• Gas output to nearly double by 2034</li>
+                      <li>• R$2.4 trillion investment in gas infrastructure</li>
+                    </ul>
+                  </div>
+                  <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-lg p-4 border border-red-100">
+                    <h4 className="font-semibold text-gray-800 mb-2">Diversification Strategy</h4>
+                    <ul className="space-y-2 text-gray-600 text-sm">
+                      <li>• Reducing over-reliance on hydropower</li>
+                      <li>• Expanding solar, wind, battery storage</li>
+                      <li>• Capacity reserve mechanism for backup</li>
+                      <li>• Inter-regional transmission improvements</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Hydrogen & Clean Fuels */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-teal-600" />
+                Hydrogen & Clean Fuels
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-lg p-5 border border-teal-100">
+                  <h4 className="font-medium text-gray-800 mb-3">National Hydrogen Program (PNH2)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Launched in 2023 with a detailed Action Plan (2023-2025), Brazil aims to be one of the world's most
+                    competitive producers of low-carbon hydrogen by 2030, leveraging abundant renewables for green H₂ production.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-teal-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Law No. 14,948/2024</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• ANP to authorize hydrogen operations</li>
+                        <li>• Brazilian Hydrogen Certification System (SBCH)</li>
+                        <li>• Rehidro tax incentive regime</li>
+                        <li>• International certification agreements</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-teal-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Milestones</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Pilot plants in all regions by 2025</li>
+                        <li>• Competitive production by 2030</li>
+                        <li>• Hydrogen hubs by 2035</li>
+                        <li>• Green ammonia exports planned</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg p-5 border border-amber-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Biofuels & Clean Transport</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    As a biofuels pioneer, Brazil continues to expand ethanol, biodiesel, and bio-based fuels. Biofuels
+                    currently supply about 21% of Brazil's domestic transport fuel on an energy basis.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 border border-amber-200">
+                      <div className="text-sm font-medium text-amber-700 mb-1">Ethanol 2034</div>
+                      <div className="text-xl font-bold text-gray-800">48.5B liters</div>
+                      <div className="text-xs text-gray-600">from 30B currently</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-amber-200">
+                      <div className="text-sm font-medium text-amber-700 mb-1">Biodiesel 2034</div>
+                      <div className="text-xl font-bold text-gray-800">13.6B liters</div>
+                      <div className="text-xs text-gray-600">B15 blend planned</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-amber-200">
+                      <div className="text-sm font-medium text-amber-700 mb-1">Current Share</div>
+                      <div className="text-xl font-bold text-gray-800">21%</div>
+                      <div className="text-xs text-gray-600">of transport fuel</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CCUS & Industrial Decarbonization */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Target className="h-5 w-5 text-indigo-600" />
+                CCUS & Industrial Decarbonization
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-lg p-5 border border-indigo-100">
+                  <h4 className="font-medium text-gray-800 mb-3">World-Leading CCUS Program</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Petrobras operates one of the largest CCUS programs in the world. Since 2008, pre-salt operations have
+                    injected around 68 million tonnes of CO₂ back into geological formations, including a record 14.2 Mt in 2024.
+                  </p>
+                  <div className="bg-white rounded-lg p-4 border border-indigo-200">
+                    <h5 className="font-semibold text-gray-800 mb-2">Law No. 14,993/2024</h5>
+                    <p className="text-gray-600 text-sm mb-2">
+                      Brazil's first dedicated CCS regulatory framework assigns ANP as the authority to regulate carbon
+                      capture and geological storage projects.
+                    </p>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• São Tomé CCS pilot: 100,000 tCO₂/year by 2028</li>
+                      <li>• Industrial CCUS hubs planned</li>
+                      <li>• Steel industry using charcoal from managed forests</li>
+                      <li>• Hydrogen-based DRI steel projects</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Electricity Market & Grid Reform */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-electric" />
+                Electricity Market & Grid Reform
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-electric-50 to-blue-50 rounded-lg p-5 border border-electric-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Law No. 15,269/2025 - Landmark Modernization</h4>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    A sweeping reform of Brazil's electricity sector enacted in November 2025 promotes competition and innovation.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-electric-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Market Opening</h5>
+                      <ul className="space-y-2 text-gray-600 text-sm">
+                        <li>• Full retail market opening by 2027-2028</li>
+                        <li>• All consumers can choose suppliers</li>
+                        <li>• Smart meter deployment</li>
+                        <li>• Demand response programs</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-electric-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Storage Framework</h5>
+                      <ul className="space-y-2 text-gray-600 text-sm">
+                        <li>• Dedicated storage auctions from 2026</li>
+                        <li>• R$1 billion/year incentives through 2030</li>
+                        <li>• Grid-scale battery provisions</li>
+                        <li>• Market participation rules for storage</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-lg p-5 border border-gray-200">
+                  <h4 className="font-medium text-gray-800 mb-3">Eletrobras Privatization (2022)</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    The privatization of Brazil's largest utility marked one of the biggest share offerings in Latin America,
+                    aimed at depoliticizing the company and unlocking billions in new investment for grid expansion and clean
+                    energy projects.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-2">Grid Modernization & Reliability</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    New high-voltage lines are under construction to carry wind and solar power from the Northeast to the Southeast.
+                    The 2025 reforms include mechanisms to compensate generators for renewable curtailment due to grid constraints.
+                  </p>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-electric rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Transmission expansion to carry renewable power</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-electric rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Grid automation and digitization programs</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-electric rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Advanced metering and control systems</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-electric rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Distributed resource participation in markets</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Recent Developments */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Clock className="h-5 w-5 text-orange-600" />
+                Recent Developments
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-5 border border-orange-100">
+                  <h4 className="font-medium text-gray-800 mb-2">Raising Climate Ambition (Late 2024)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Brazil significantly boosted its 2035 climate target at COP29, committing to cut emissions 59-67% below 2005
+                    levels by 2035. The new administration has created a Ministry of Climate and Environment, with Brazil set to
+                    host COP30 in Belém (November 2025).
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-5 border border-blue-100">
+                  <h4 className="font-medium text-gray-800 mb-2">Carbon Market Launch (November 2024)</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Congress approved the Brazilian Emissions Trading System (SBCE), the country's first regulated ETS. The first
+                    phase will start by 2025-2026, focusing on monitoring and reporting, then evolving to binding caps and trading
+                    by the late 2020s.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-5 border border-green-100">
+                  <h4 className="font-medium text-gray-800 mb-2">Renewable Energy Surge</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Brazil's renewable energy deployment is accelerating faster than official forecasts. Solar power added around
+                    10 GW in 2023 alone, with projections now showing 115 GW of solar PV and 40 GW of wind by 2028.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    The first preliminary offshore wind licenses were issued in October 2023, with a draft Offshore Wind Law in
+                    discussion to unlock an estimated 700 GW of offshore wind potential.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-lg p-5 border border-teal-100">
+                  <h4 className="font-medium text-gray-800 mb-2">Hydrogen & CCS Momentum (2023-2024)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    After the Low-Carbon Hydrogen Law took effect, ANP began crafting regulations for hydrogen facility licensing
+                    and launched the Brazilian Hydrogen Certification System. Green hydrogen pilots near ports are moving forward
+                    with domestic and foreign investment.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Petrobras is proceeding with Brazil's first dedicated CCS pilot in São Paulo state, targeting 100,000 tons
+                    CO₂ captured per year by 2028. A Carbon Capture Subcommittee was convened in 2025 to draft a national CCUS
+                    roadmap ahead of COP30.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Regulatory Compliance & Reporting */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <FileText className="h-5 w-5 text-gray-600" />
+                Regulatory Compliance & Reporting
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-2">Multi-Agency Oversight</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Brazil's energy sector is governed by a complex regulatory landscape with overlapping compliance requirements:
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-gray-50 rounded-lg p-4">
+                      <h5 className="font-semibold text-gray-800 mb-2">Key Regulators</h5>
+                      <ul className="space-y-2 text-gray-600 text-sm">
+                        <li>• ANEEL: Power sector regulation</li>
+                        <li>• ANP: Oil, gas, hydrogen, CCS oversight</li>
+                        <li>• IBAMA: Environmental licensing</li>
+                        <li>• State agencies: Regional compliance</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-4">
+                      <h5 className="font-semibold text-gray-800 mb-2">Compliance Areas</h5>
+                      <ul className="space-y-2 text-gray-600 text-sm">
+                        <li>• Environmental impact assessments</li>
+                        <li>• Grid codes and service quality</li>
+                        <li>• Forest Code for biofuel plantations</li>
+                        <li>• Water use permits for hydro</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-5 border border-blue-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Climate Reporting & Carbon Compliance</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Under the upcoming SBCE carbon market, covered entities will need to measure, report, and verify (MRV) their
+                    greenhouse gas emissions annually, subject to third-party verification.
+                  </p>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Brazil GHG Protocol Program (voluntary)</li>
+                    <li>• RenovaBio lifecycle analysis certification</li>
+                    <li>• CBIO credit retirement requirements</li>
+                    <li>• Penalties for non-compliance by ANP</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-medium text-gray-800 mb-2">Standards and Taxonomy</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Brazil is developing frameworks to guide sustainable investment and corporate disclosures:
+                  </p>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Sustainable Finance Taxonomy (expected 2025)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                      <span>CVM ESG reporting guidelines for listed companies</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                      <span>TCFD-aligned climate risk disclosure proposals</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                      <span>BNDES social and environmental reporting requirements</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Key References */}
+            <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <FileText className="h-5 w-5 text-gray-600" />
+                Key References
+              </h3>
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Climate & Energy Strategy</h4>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Nationally Determined Contributions (NDCs) - Updated 2022, 2023</li>
+                    <li>• National Policy on Climate Change (PNMC) - Law 12.187/2009</li>
+                    <li>• Ecological Transformation Plan (2023)</li>
+                    <li>• Ten-Year Energy Expansion Plan (PDE 2034)</li>
+                    <li>• National Energy Plan 2050</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Clean Energy Programs</h4>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• National Biofuels Policy (RenovaBio) - Law 13.576/2017</li>
+                    <li>• National Hydrogen Program & Law 14.948/2024</li>
+                    <li>• Fuels of the Future Legislation (2024) - Law 14.993/2024</li>
+                    <li>• Brazilian Emissions Trading System (SBCE) - 2024</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Market Reform</h4>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Power Sector Modernization - Law 15.269/2025</li>
+                    <li>• Eletrobras Privatization (2022)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Newsletter Signup */}
+        <EmailSignup />
+      </div>
+    );
+  }
+
   // Default legislation content for other countries
   return (
     <div className="max-w-6xl mx-auto space-y-8">
