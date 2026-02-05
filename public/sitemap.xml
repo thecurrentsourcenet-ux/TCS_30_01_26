@@ -1,285 +1,400 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thecurrentsource.net/</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/home</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/about</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/newsletter</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/privacy</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/infographics</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/infographics/rwanda-2030-clean-energy-climate</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/infographics/uruguay-renewable-energy-success</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/category/technical</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/category/technical/production</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/category/technical/storage</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/category/technical/transport</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/category/technical/safety</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thecurrentsource.net/category/technical/applications</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/davos-2026-report</loc>
   </url>
   <url>
     <loc>https://thecurrentsource.net/hydrogen-book</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/hydrogen/2009-dawn-of-a-new-hydrogen-era</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/infographics</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/infographics/brazil-green-energy-evolution</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/infographics/greenland-strategic-resources-energy-transition</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/infographics/rwanda-2030-clean-energy-climate</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/infographics/uruguay-renewable-energy-success</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/category/technical</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/category/technical/production</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/category/technical/storage</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/category/technical/transport</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/category/technical/safety</loc>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/category/technical/applications</loc>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/us</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/eu</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/uk</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/de</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/fr</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/jp</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/cn</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/kr</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/au</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/in</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thecurrentsource.net/category/legislation/vn</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/login</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://thecurrentsource.net/category/legislation/br</loc>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/topics/renewable-energy</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/the-2026-energy-pivot-why-the-transition-is-trading-perfection-for-pragmatic-scale</loc>
+    <lastmod>2026-01-30</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/topics/energy-storage</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/cop30-marks-shift-to-voluntary-climate-action-as-energy-transition-enters-execution-phase</loc>
+    <lastmod>2026-01-06</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/topics/smart-grid</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/off-grid-renewables-natural-hydrogen-and-industrial-decarbonization-recent-developments-and-policy-updates</loc>
+    <lastmod>2025-12-30</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/topics/hydrogen-energy</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/the-great-divide-why-top-energy-forecasters-see-radically-different-futures-for-2026</loc>
+    <lastmod>2025-12-29</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/topics/electric-vehicles</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/world-energy-outlook-2025-the-age-of-electricity-and-systemic-shifts</loc>
+    <lastmod>2025-12-20</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/topics/energy-policy</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/execution-capacity-not-ambition-determines-global-progress</loc>
+    <lastmod>2025-12-20</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/industry/utilities</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/industrial-decarbonisation-unido-guidebook-shifts-focus-to-implementation</loc>
+    <lastmod>2025-12-20</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/industry/manufacturing</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/nepals-clean-energy-transition-ambition-progress-and-regional-impact</loc>
+    <lastmod>2025-12-12</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/industry/transportation</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/europes-energy-transition-policy-infrastructure-and-market-trends-in-2025</loc>
+    <lastmod>2025-12-12</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/industry/oil-gas</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/global-energy-trends-renewables-expansion-grid-policy-and-hydrogen-innovation</loc>
+    <lastmod>2025-12-12</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/videos</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/digitalization-and-policy-drive-the-global-energy-transition</loc>
+    <lastmod>2025-12-08</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/videos/shorts</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/driving-europes-energy-transition-policy-innovation-and-infrastructure-highlights</loc>
+    <lastmod>2025-12-05</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/resources</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://thecurrentsource.net/articles/grid-resilience-innovation-and-investment</loc>
+    <lastmod>2025-12-05</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/resources/reports</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://thecurrentsource.net/articles/energy-transition-progress-investment-trends-and-infrastructure-challenges</loc>
+    <lastmod>2025-11-29</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/resources/whitepapers</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://thecurrentsource.net/articles/trends-hydrogen-smart-grids-evs-and-oil-gas-demand</loc>
+    <lastmod>2025-11-29</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/market-data</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thecurrentsource.net/articles/energy-systems-progress-barriers-and-shifting-risks-in-2025</loc>
+    <lastmod>2025-11-24</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/market-data/commodities</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/global-policy-and-innovation-trends-in-the-energy-transition</loc>
+    <lastmod>2025-11-24</lastmod>
   </url>
   <url>
-    <loc>https://thecurrentsource.net/market-data/stocks</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thecurrentsource.net/articles/hydrogen-workforce-and-renewable-deployment-trends-across-asean-and-beyond</loc>
+    <lastmod>2025-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/renewables-boom-worldwide-reshaping-the-future-of-energy</loc>
+    <lastmod>2025-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/why-20252026-will-define-the-next-decade-of-the-energy-transition</loc>
+    <lastmod>2025-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/key-developments-shaping-the-energy-transition-storage-policy-and-innovation</loc>
+    <lastmod>2025-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/irena-southeast-asias-48-trillion-energy-transition-four-surprising-realities</loc>
+    <lastmod>2025-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/lagarde-europes-renewable-energy-transition-opportunities-and-hurdles</loc>
+    <lastmod>2025-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/eu-sets-binding-timeline-to-phase-out-russian-gas-by-2028</loc>
+    <lastmod>2025-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/from-grid-to-jet-engine-inside-the-global-push-to-power-hydrogens-future</loc>
+    <lastmod>2025-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/imo-net-zero-shipping-framework-delayed-implications-for-maritime-decarbonization</loc>
+    <lastmod>2025-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/energy-transition-flexibility-renewables-growth-and-supply-chain-challenges</loc>
+    <lastmod>2025-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/rwandas-integrated-energy-and-climate-strategy-progress-projects-and-regional-links</loc>
+    <lastmod>2025-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/ultra-fast-ev-charging-grid-stability-challenges-and-global-lessons</loc>
+    <lastmod>2025-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-renewables-roundup-growth-investment-and-innovation</loc>
+    <lastmod>2025-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/mena-power-surge-cooling-demand-supply-choices-and-grid-innovation</loc>
+    <lastmod>2025-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/indias-bengaluru-hydrogen-plant-a-new-milestone-for-green-hydrogen-ambitions</loc>
+    <lastmod>2025-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/eurelectrics-vision-for-the-eu-citizens-energy-package-consumer-centric-reform</loc>
+    <lastmod>2025-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/oil-and-gas-declining-output-market-role-and-regulatory-shifts</loc>
+    <lastmod>2025-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/electric-grids-under-pressure-demand-upgrades-and-reliability-challenges</loc>
+    <lastmod>2025-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/brazil-seeks-iea-membership-amid-shifting-global-energy-dynamics</loc>
+    <lastmod>2025-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-hydrogen-sector-progress-barriers-and-emerging-trends-iea-report-2025</loc>
+    <lastmod>2025-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-renewable-energy-latest-on-growth-investment-and-policy-shifts</loc>
+    <lastmod>2025-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/microgrids-accelerating-energy-resilience-and-decarbonization</loc>
+    <lastmod>2025-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/green-hydrogen-latest-progress-policy-and-persistent-challenges</loc>
+    <lastmod>2025-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/ev-charging-infrastructure-2025-trends-challenges-and-innovations</loc>
+    <lastmod>2025-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/energy-trends-2025-the-quiet-rise-of-the-electricity-era</loc>
+    <lastmod>2025-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/utilities-outperform-oil-gas-in-2025-amid-policy-and-market-shifts</loc>
+    <lastmod>2025-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/chinas-hydrogen-policy-2025-outlook-and-industry-trends</loc>
+    <lastmod>2025-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/hydrogen-energy-trends-challenges-and-innovations-in-2025</loc>
+    <lastmod>2025-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/renewables-in-europe-growth-innovation-and-emerging-challenges</loc>
+    <lastmod>2025-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/microgrids-accelerating-resilience-and-renewable-integration</loc>
+    <lastmod>2025-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-energy-sector-faces-talent-investment-and-policy-headwinds</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/hydrogen-power-global-projects-innovation-and-market-shifts</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/renewable-energy-developments-and-challenges-in-2025</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/key-trends-in-electrical-power-innovation-and-challenges</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/smart-grid-innovations-and-challenges-in-energy-transition</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-energy-trends-and-innovations-in-2025</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/microgrid-innovations-drive-energy-independence-and-efficiency</loc>
+    <lastmod>2025-08-21</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/charging-ahead-how-policy-shifts-innovations-and-partnerships-are-powering-up-ev-infrastructure</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/this-week-in-energy-data-centers-drive-demand-ais-power-appetite-and-green-innovations</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/microgrids-hydrogen-trials-market-acceleration-and-new-use-cases</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/bps-largest-oil-gas-discovery-in-25-years-reshapes-deepwater-prospects</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/renewables-weekly-update-august-12-2025</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/electrical-power-developments-week-of-august-12-2025</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/ai-steps-into-the-control-room-of-smart-grids</loc>
+    <lastmod>2025-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/renewables-in-2025-big-promises-mixed-progress</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/energy-in-transition-italys-new-moves-global-innovation-and-strategic-roles</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-power-trends-mid-2025-demand-rising-systems-adapting</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-oil-and-gas-market-update</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/ev-charging-infrastructure-innovation-and-integration</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/smart-grids-powering-a-connected-resilient-and-sustainable-future</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/microgrid-innovation-weekly-developments-and-global-trends</loc>
+    <lastmod>2025-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/powering-forward-ev-charging-and-microgrid-innovations-august-2025-roundup</loc>
+    <lastmod>2025-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/renewables-in-flux-progress-politics-and-the-grid</loc>
+    <lastmod>2025-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/unido-industrial-decarbonization-handbook</loc>
+    <lastmod>2025-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/more-energy-and-security-eastern-europe-strengthens-electricity-exchange</loc>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/the-new-motus-e-white-paper-electric-mobility-between-innovation-sustainability-and-opportunities-for-all</loc>
+    <lastmod>2025-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/global-renewable-energy-investment-surges-to-record-levels</loc>
+    <lastmod>2024-12-10</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/smart-grid-technology-revolutionizes-energy-distribution</loc>
+    <lastmod>2024-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://thecurrentsource.net/articles/green-hydrogen-production-scales-up-with-new-electrolysis-technology</loc>
+    <lastmod>2024-09-22</lastmod>
   </url>
 </urlset>
