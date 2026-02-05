@@ -23,6 +23,7 @@ const HydrogenFutureComingSoon = lazy(() => import('./pages/HydrogenFutureComing
 const HydrogenBook = lazy(() => import('./pages/HydrogenBook'));
 const Dawn2009 = lazy(() => import('./pages/hydrogen-book/Dawn2009'));
 const Infographics = lazy(() => import('./pages/Infographics'));
+const BrazilInfographic = lazy(() => import('./pages/infographics/Brazil'));
 const RwandaInfographic = lazy(() => import('./pages/infographics/Rwanda'));
 const UruguayInfographic = lazy(() => import('./pages/infographics/Uruguay'));
 const GreenlandInfographic = lazy(() => import('./pages/infographics/Greenland'));
@@ -56,6 +57,7 @@ function App() {
                   <Route path="/hydrogen-book" element={<HydrogenBook />} />
                   <Route path="/hydrogen/2009-dawn-of-a-new-hydrogen-era" element={<Dawn2009 />} />
                   <Route path="/infographics" element={<Infographics />} />
+                  <Route path="/infographics/brazil-green-energy-evolution" element={<BrazilInfographic />} />
                   <Route path="/infographics/greenland-strategic-resources-energy-transition" element={<GreenlandInfographic />} />
                   <Route path="/infographics/rwanda-2030-clean-energy-climate" element={<RwandaInfographic />} />
                   <Route path="/infographics/uruguay-renewable-energy-success" element={<UruguayInfographic />} />

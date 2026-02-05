@@ -18,6 +18,20 @@ interface InfographicCard {
 
 const infographics: InfographicCard[] = [
   {
+    id: 'brazil-green-energy',
+    title: "Brazil's Green Energy Evolution: Balancing Hydro Dominance with Wind, Solar, and Hydrogen",
+    country: 'Brazil',
+    description: 'Brazil is one of the world\'s cleanest energy economies with 92% renewable electricity. Discover how the country is diversifying beyond hydropower with rapid solar and wind expansion, market reforms, and a new green hydrogen framework.',
+    imageSrc: '/infographics/brasil_infographic_2026_the_current_source.jpg',
+    imageAlt: 'Brazil renewable energy infographic showing 92% clean electricity mix with hydropower, wind, solar, and emerging green hydrogen sector',
+    path: '/infographics/brazil-green-energy-evolution',
+    highlights: [
+      '92% Renewable Electricity',
+      '115 GW Solar by 2028',
+      'Green Hydrogen Framework'
+    ]
+  },
+  {
     id: 'greenland-resources',
     title: "Greenland: A Strategic Crossroads of Resources & Energy Transition",
     country: 'Greenland',
