@@ -2745,6 +2745,597 @@ export default function Legislation({ countryId }: LegislationProps) {
     );
   }
 
+  // South Africa-specific legislation content
+  if (selectedCountry === 'za') {
+    return (
+      <div className="max-w-6xl mx-auto space-y-8">
+        {/* Page Header */}
+        <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border border-amber-100">
+          <div className="flex items-center justify-between gap-4 mb-6">
+            <div className="flex items-center gap-4">
+              <div className="bg-amber-100 p-3 rounded-lg">
+                <Scale className="h-8 w-8 text-amber-600" />
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-gray-800">South Africa Energy Policy & Regulation</h1>
+                <p className="text-gray-600 mt-2">Comprehensive coverage of South Africa's net-zero commitments, just energy transition investments, and electricity market reforms</p>
+              </div>
+            </div>
+            {/* Mobile: Show compact country selector */}
+            <div className="md:hidden relative flex-shrink-0">
+              <select
+                value={selectedCountry}
+                onChange={(e) => setSelectedCountry(e.target.value)}
+                className="px-3 py-2 border-2 border-amber-400 rounded-lg bg-white text-gray-800 font-medium appearance-none pr-8 cursor-pointer hover:bg-amber-50 transition-colors text-sm"
+              >
+                {countries.map((country) => (
+                  <option key={country.id} value={country.id}>
+                    {country.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronRight className="h-4 w-4 text-amber-600 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none rotate-90" />
+            </div>
+          </div>
+        </div>
+
+        <EnergyPolicyAd />
+
+        <section id="za" className="scroll-mt-24">
+          <div className="space-y-8">
+            {/* Key Policy Areas Header */}
+            <div className="bg-gradient-to-br from-electric-50 to-teal-50 rounded-xl p-6 border border-electric-100">
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Key Policy Areas</h2>
+              <p className="text-gray-600">Comprehensive overview of South Africa's climate targets, energy reforms, and transition strategy</p>
+            </div>
+
+            {/* Net Zero & Climate Targets */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Target className="h-5 w-5 text-green-600" />
+                Net Zero & Climate Targets
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-5 border border-green-100">
+                  <h4 className="font-medium text-gray-800 mb-3">2050 Net Zero Commitment</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    South Africa has pledged to achieve net zero greenhouse gas emissions by 2050, recently enshrining this commitment in a new Climate Change Act. The Act (signed in 2024) establishes a framework of five-year sectoral emission targets aligned with the national climate goals <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[1]</a>. Each major sector will receive a carbon budget, and companies exceeding their budget will incur penalties via a higher carbon tax rate on the excess emissions.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-green-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">NDC Target 2030</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Reduce emissions to 350–420 MtCO₂e</li>
+                        <li>• More ambitious than prior pledge</li>
+                        <li>• Five-year sectoral targets</li>
+                        <li>• Carbon budgets for major emitters</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-green-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Governance</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Ministerial Committee on Climate Change</li>
+                        <li>• Regular progress updates required</li>
+                        <li>• Penalty system for excess emissions</li>
+                        <li>• Integration with carbon tax</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Renewable & Low-Carbon Power */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-yellow-600" />
+                Renewable & Low-Carbon Power
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-lg p-5 border border-yellow-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Integrated Resource Plan (IRP)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    The national Integrated Resource Plan guides South Africa's electricity mix transition. IRP 2019 set a goal of adding 27.6 GW of renewables by 2030 (excluding large hydro) <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[3]</a>, and subsequent iterations have increased ambition. A draft IRP 2023/25 calls for an investment of ~ZAR 2.23 trillion to add 105 GW of new generation by 2039, effectively rebuilding the grid "two and a half times" over <a href="https://www.world-nuclear-news.org/articles/south-african-government-approves-draft-2025-irp" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[4][5]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 border border-yellow-200">
+                      <div className="text-sm font-medium text-yellow-700 mb-1">New Capacity by 2039</div>
+                      <div className="text-xl font-bold text-gray-800">105 GW</div>
+                      <div className="text-xs text-gray-600">ZAR 2.23 trillion investment</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-yellow-200">
+                      <div className="text-sm font-medium text-yellow-700 mb-1">Gas Capacity by 2030</div>
+                      <div className="text-xl font-bold text-gray-800">6,000 MW</div>
+                      <div className="text-xs text-gray-600">for reliability</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-yellow-200">
+                      <div className="text-sm font-medium text-yellow-700 mb-1">Nuclear by 2039</div>
+                      <div className="text-xl font-bold text-gray-800">5,200 MW</div>
+                      <div className="text-xs text-gray-600">phased rollout</div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    This expansion prioritizes wind and solar (backed by abundant resources in the Cape regions) and foresees cleaner sources like renewables, hydro, and nuclear surpassing coal in the power mix by the mid-2030s <a href="https://africa-energy-portal.org/news/south-africa-unveils-127bn-energy-transition-plan" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[6]</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Carbon Pricing & Carbon Budgets */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <DollarSign className="h-5 w-5 text-blue-600" />
+                Carbon Pricing & Carbon Budgets
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-5 border border-blue-100">
+                  <h4 className="font-medium text-gray-800 mb-3">National Carbon Tax (2019)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    South Africa implemented a national carbon tax in 2019 – one of the first in Africa – as its primary carbon pricing instrument <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[10]</a>. As of 2025, the tax's headline rate is R236 per ton CO₂-e (≈USD 12.5) <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[11]</a>, but various tax-free allowances (60–100% of emissions, depending on sector and offsets) have substantially lowered the effective rate.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Carbon Price Trajectory</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• 2025: R236/ton (~USD 12.5)</li>
+                        <li>• 2030: ~USD 30/ton target</li>
+                        <li>• 2050: ~USD 120/ton target</li>
+                        <li>• Phase 2 (2026+): Tighter allowances</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Carbon Budget System</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Mandatory for large emitters</li>
+                        <li>• Capped emissions limits</li>
+                        <li>• Higher tax on excess emissions</li>
+                        <li>• "Pollute-and-pay" mechanism</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    Proposed reforms (published in late 2024) include cutting the basic tax-free allowance from 60% to 50% of emissions in 2026 (and to 40% later) <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[14]</a>, which would significantly raise emitters' carbon costs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Energy Efficiency & Buildings */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Energy Efficiency & Buildings</h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-5 border border-purple-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Building Codes & Standards</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Building efficiency is guided by national codes and the National Development Plan 2030, which calls for developing zero-emission building standards by 2030 <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[16]</a>. Building codes (e.g. SANS 10400-XA) already require insulation and efficient design in new construction, and since 2020 large buildings must obtain Energy Performance Certificates.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-purple-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Tax Incentives</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Section 12L: 125% deduction for efficiency measures</li>
+                        <li>• Businesses: 125% solar PV cost deduction</li>
+                        <li>• Households: 25% solar rebate (up to R15,000)</li>
+                        <li>• Industrial processes & building retrofits</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-purple-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Programs & Standards</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Energy Performance Certificates (2020+)</li>
+                        <li>• Appliance labeling & minimum standards</li>
+                        <li>• Municipal building retrofits</li>
+                        <li>• Zero-emission building standards by 2030</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Security of Supply & Energy Independence */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-red-600" />
+                Security of Supply & Energy Independence
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-lg p-5 border border-red-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Energy Action Plan (2022)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    Ensuring energy security amid a power crisis is at the core of South Africa's policy. Rolling blackouts (locally termed "load shedding") reached up to Stage 6 (±12 hours/day) in 2023, crimping economic growth to below 1% <a href="https://africa-energy-portal.org/news/south-africa-unveils-127bn-energy-transition-plan" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[22]</a>. In response, the government launched an Energy Action Plan in July 2022, overseen by a multi-agency National Energy Crisis Committee (NECOM).
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-red-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Five Priority Actions</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>① Fix Eskom's coal plants through maintenance</li>
+                        <li>② Enable private generation (remove hurdles)</li>
+                        <li>③ Accelerate new capacity procurement</li>
+                        <li>④ Unleash rooftop solar (tax incentives)</li>
+                        <li>⑤ Restructure electricity sector long-term</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-red-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Emergency Measures</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Import 1.6 GW from neighbors</li>
+                        <li>• Fast-track battery storage</li>
+                        <li>• Contract new peaking generation</li>
+                        <li>• Net-metering for rooftop solar</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    Thanks to these interventions, South Africa's government claimed to have "turned the corner" on load-shedding by late 2025, with outage frequency beginning to decline as additional capacity comes online <a href="https://www.world-nuclear-news.org/articles/south-african-government-approves-draft-2025-irp" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[25]</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Hydrogen & Clean Fuels */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-teal-600" />
+                Hydrogen & Clean Fuels
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-lg p-5 border border-teal-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Hydrogen Society Roadmap (2021)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    South Africa views green hydrogen as a key pillar of its future clean energy economy, leveraging the country's excellent solar and wind resources and rich platinum reserves (used in electrolyzers and fuel cells). The Department of Science and Innovation released a Hydrogen Society Roadmap (HSRM) in 2021, which targets the creation of a thriving domestic and export hydrogen market <a href="http://gh2.org/countries/south-africa" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[26][27]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 border border-teal-200">
+                      <div className="text-sm font-medium text-teal-700 mb-1">Production Target 2030</div>
+                      <div className="text-xl font-bold text-gray-800">500,000 t/year</div>
+                      <div className="text-xs text-gray-600">green hydrogen</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-teal-200">
+                      <div className="text-sm font-medium text-teal-700 mb-1">Electrolyser Capacity</div>
+                      <div className="text-xl font-bold text-gray-800">10 GW</div>
+                      <div className="text-xs text-gray-600">Northern Cape focus</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-teal-200">
+                      <div className="text-sm font-medium text-teal-700 mb-1">H₂ Buses/Trucks</div>
+                      <div className="text-xl font-bold text-gray-800">500 by 2030</div>
+                      <div className="text-xs text-gray-600">100 by 2025</div>
+                    </div>
+                  </div>
+                  <div className="mt-4 bg-white rounded-lg p-4 border border-teal-200">
+                    <h5 className="font-semibold text-gray-800 mb-2">Four Strategic Goals</h5>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>① Establish South Africa as global green hydrogen exporter (green ammonia)</li>
+                      <li>② Decarbonize domestic power with hydrogen storage and fuel</li>
+                      <li>③ Fuel industrial and heavy transport (steel, trucks) with H₂-based fuels</li>
+                      <li>④ Localize manufacturing of hydrogen technologies (electrolyzers, fuel cells)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-lg p-5 border border-indigo-100">
+                  <h4 className="font-medium text-gray-800 mb-3">CCUS & Sustainable Fuels</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    In hard-to-abate sectors, South Africa is pairing hydrogen with carbon capture and utilization. One flagship initiative is the CoalCO₂-X program, which will use green hydrogen to convert carbon emissions (CO₂, NOx, SOx) from coal power plant flue gas into value-added products <a href="http://gh2.org/countries/south-africa" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[32]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-indigo-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">CoalCO₂-X Program</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Convert coal plant emissions to products</li>
+                        <li>• Use green hydrogen for conversion</li>
+                        <li>• Support coal industry transition</li>
+                        <li>• Create fuels or chemicals</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-indigo-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Hydrogen Valleys</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Limpopo/Gauteng hub projects</li>
+                        <li>• KwaZulu-Natal industrial corridor</li>
+                        <li>• Cluster production & off-takers</li>
+                        <li>• Export infrastructure development</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    South African companies are also pursuing synfuels and SAF: for example, petrochemical giant Sasol (a world leader in coal-to-liquid fuels) has partnered with Germany's H2Global program to produce sustainable aviation fuel from green hydrogen and captured CO₂ <a href="http://gh2.org/countries/south-africa" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[33]</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Electricity Market & Grid Reform Header */}
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Electricity Market & Grid Reform</h2>
+              <p className="text-gray-600">Transforming South Africa's electricity sector from monopoly to competitive market</p>
+            </div>
+
+            {/* Competitive Market & Eskom Restructuring */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Competitive Market & Eskom Restructuring</h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg p-5 border border-orange-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Electricity Regulation Amendment Act (2024)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    A major reform is transforming South Africa's electricity supply industry from a vertically integrated monopoly to a competitive market. In 2024, Parliament passed the Electricity Regulation Amendment Act, which ends Eskom's exclusive dominance in power generation and allows private power producers to compete on an equal footing <a href="https://www.gcis.gov.za/electricitymarket" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[36][37]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-orange-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Eskom Unbundling</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Separate Generation company</li>
+                        <li>• Independent Transmission/System Operation</li>
+                        <li>• Distribution/Retail entity</li>
+                        <li>• Remains state-owned</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-orange-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">NTCSA (April 2024)</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Independent Transmission System Operator</li>
+                        <li>• Transparent trading platform</li>
+                        <li>• Non-discriminatory grid access</li>
+                        <li>• Multi-buyer, multi-seller market</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    The Act also supports Eskom's financial recovery by addressing governance and crime: for instance, it introduces tough penalties (up to 5–10 years imprisonment) for cable theft and grid vandalism that have plagued South Africa's power infrastructure <a href="https://www.gcis.gov.za/electricitymarket" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[43]</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Grid Expansion & Access */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Grid Expansion & Access</h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-5 border border-blue-100">
+                  <h4 className="font-medium text-gray-800 mb-3">Transmission Development Plan</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    A critical bottleneck in South Africa's energy transition is the constrained transmission grid. The existing network, largely designed around aging coal power stations in Mpumalanga, lacks capacity to connect new renewable projects in remote high-resource areas. Eskom estimates that about 11 GW of renewable projects awarded under procurement programs are awaiting grid connections due to capacity shortfalls <a href="https://www.trade.gov/market-intelligence/south-africa-energy-eskom-unbundling-update" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[44]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">NTCSA Plan by 2030</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• 14,000 km of new high-voltage lines</li>
+                        <li>• Dozens of new substations</li>
+                        <li>• Tens of billions rand investment</li>
+                        <li>• Essential for 20–30 GW renewables</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Private Capital (ITPO)</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Independent Transmission Projects Office</li>
+                        <li>• Private investment in priority projects</li>
+                        <li>• Leased/integrated into public grid</li>
+                        <li>• Approved late 2023</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Renewable Procurement & IPP Programs */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Renewable Procurement & IPP Programs</h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-lg p-5 border border-green-100">
+                  <h4 className="font-medium text-gray-800 mb-3">REIPPPP (2011–Present)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    South Africa's primary mechanism for utility-scale renewable energy deployment is the Renewable Energy Independent Power Producer Procurement Programme (REIPPPP). Launched in 2011, REIPPPP uses competitive tender "bid windows" where private developers bid to supply renewable power (wind, solar PV, CSP, etc.), with 20-year Power Purchase Agreements typically signed by Eskom as the offtaker <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[51]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 border border-green-200">
+                      <div className="text-sm font-medium text-green-700 mb-1">First 5 Years</div>
+                      <div className="text-xl font-bold text-gray-800">USD 16B</div>
+                      <div className="text-xs text-gray-600">investment attracted</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-green-200">
+                      <div className="text-sm font-medium text-green-700 mb-1">By 2020</div>
+                      <div className="text-xl font-bold text-gray-800">~6 GW</div>
+                      <div className="text-xs text-gray-600">procured via REIPPPP</div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-green-200">
+                      <div className="text-sm font-medium text-green-700 mb-1">By 2023</div>
+                      <div className="text-xl font-bold text-gray-800">~10 GW</div>
+                      <div className="text-xs text-gray-600">renewables installed</div>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    Another major reform was raising and then removing the licensing threshold for embedded generation: since 2022, projects of any size can proceed with just registration, enabling mines, industries, and private consumers to rapidly build their own solar/wind plants and sell excess power <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[56]</a>. This change unleashed a boom in private projects – over 100 such projects &gt;1 MW (total ~10 GW) are in development.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Recent Developments Header */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Recent Developments</h2>
+              <p className="text-gray-600">Latest policy updates, market reforms, and transition milestones</p>
+            </div>
+
+            {/* Climate Change Act & Carbon Budgets (2024) */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <FileText className="h-5 w-5 text-green-600" />
+                Climate Change Act & Carbon Budgets (2024)
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-5 border border-green-100">
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    In July 2024, President Ramaphosa signed the Climate Change Bill into law, marking a significant milestone in climate governance <a href="https://climateactiontracker.org/countries/south-africa/policies-action/" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[1]</a>. Now an Act, this law compels the government to implement the NDC and net-zero 2050 goal via binding frameworks. It introduces Sectoral Emissions Targets (SETs) for key sectors (energy, transport, industry, etc.) that will be set every five years in line with the national carbon budget.
+                  </p>
+                  <div className="bg-white rounded-lg p-4 border border-green-200">
+                    <h4 className="font-semibold text-gray-800 mb-2">Key Provisions</h4>
+                    <ul className="space-y-1 text-gray-600 text-sm">
+                      <li>• Mandatory company-level carbon budgets for large emitters</li>
+                      <li>• Allocated capped emissions limits</li>
+                      <li>• From 2026: Penalty carbon taxes on excess emissions</li>
+                      <li>• First round of targets for 2025–2030 period in development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Integrated Resource Plan 2025 */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <TrendingUp className="h-5 w-5 text-blue-600" />
+                Integrated Resource Plan 2025
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-5 border border-blue-100">
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    After several delays, the government in October 2025 approved an updated Integrated Resource Plan (IRP 2025) to address the electricity crisis and future energy mix. The IRP 2025 outlines an unprecedented investment of ~R2.23 trillion (~$127 billion) in generation capacity and grid infrastructure by 2039 <a href="https://africa-energy-portal.org/news/south-africa-unveils-127bn-energy-transition-plan" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[60][5]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Twin Goals</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• End load-shedding in near term</li>
+                        <li>• Decarbonize power sector long term</li>
+                        <li>• Support economic growth</li>
+                        <li>• Biggest post-apartheid investment</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Emissions Projections</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• 2030: ~160 MtCO₂e (power sector)</li>
+                        <li>• 2035: ~142 MtCO₂e</li>
+                        <li>• Down from 200+ MtCO₂e recent years</li>
+                        <li>• Renewables overtake coal by 2035</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Just Energy Transition Partnership */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Globe className="h-5 w-5 text-teal-600" />
+                Just Energy Transition Partnership
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-lg p-5 border border-teal-100">
+                  <h4 className="font-medium text-gray-800 mb-3">International Climate Finance (COP26 2021)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    At COP26 in 2021, South Africa entered into a Just Energy Transition Partnership (JETP) with the EU, US, UK, Germany and France, who collectively pledged an initial $8.5 billion to support South Africa's decarbonization efforts <a href="https://www.climatecommission.org.za/south-africas-jet-ip" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[68]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-teal-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">JET Investment Plan</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• ZAR 1.5 trillion (~$98B) needed by 2030</li>
+                        <li>• ZAR 1.86 trillion (~$124B) by 2035</li>
+                        <li>• Electricity infrastructure focus</li>
+                        <li>• Green hydrogen & EV manufacturing</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-teal-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Social Investment</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Worker retraining programs</li>
+                        <li>• Economic development for coal regions</li>
+                        <li>• Support for communities in transition</li>
+                        <li>• Pilot model for emerging economies</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Coal Transition Pilot (Komati) */}
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <Target className="h-5 w-5 text-amber-600" />
+                Coal Transition Pilot (Komati)
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg p-5 border border-amber-100">
+                  <h4 className="font-medium text-gray-800 mb-3">First Coal Plant Retired for Climate Reasons (Oct 2022)</h4>
+                  <p className="text-gray-600 leading-relaxed mb-3">
+                    A notable recent milestone in South Africa's just transition was the retirement of Komati Power Station in October 2022 – the first large coal-fired plant in South Africa to be closed for climate reasons. Komati (formerly 1,000 MW) ceased operations after running for 61 years. The World Bank approved a $497 million financing package for the Komati Just Energy Transition Project <a href="https://www.worldbank.org/en/news/press-release/2022/11/04/world-bank-approves-497-million-in-financing-to-lower-south-africa-s-greenhouse-gas-emissions-and-support-a-just-transit" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[70][71]</a>.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 border border-amber-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Clean Energy Hub</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• 150 MW solar PV at site</li>
+                        <li>• 70 MW wind capacity</li>
+                        <li>• 150 MW battery storage</li>
+                        <li>• Voltage support & power for region</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 border border-amber-200">
+                      <h5 className="font-semibold text-gray-800 mb-2">Just Transition Focus</h5>
+                      <ul className="space-y-1 text-gray-600 text-sm">
+                        <li>• Workers retrained for renewables</li>
+                        <li>• Skills development center on-site</li>
+                        <li>• Economic diversification funding</li>
+                        <li>• Proof-of-concept for future closures</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed mt-3">
+                    South Africa plans to decommission nearly 12 GW of coal capacity by 2030 in line with the IRP2019 and climate goals <a href="https://www.worldbank.org/en/news/press-release/2022/11/04/world-bank-approves-497-million-in-financing-to-lower-south-africa-s-greenhouse-gas-emissions-and-support-a-just-transit" target="_blank" rel="noopener noreferrer" className="text-electric-600 hover:text-electric-700">[75]</a>. Lessons from Komati will inform the retirement of larger stations like Hendrina, Grootvlei, and others in the coming years.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Key References */}
+            <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <FileText className="h-5 w-5 text-gray-600" />
+                Key References
+              </h3>
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Climate & Energy Strategy</h4>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• <strong>South Africa Climate Change Act (2024)</strong> – Framework law establishing binding climate targets, sectoral emissions budgets, and integration of carbon budgets with the carbon tax</li>
+                    <li>• <strong>Integrated Resource Plan (IRP 2019 & 2025)</strong> – Government's long-term electricity capacity expansion plans</li>
+                    <li>• <strong>Energy Action Plan (2022)</strong> – Presidential plan to end load-shedding and ensure energy security</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Market Reform & Carbon Pricing</h4>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• <strong>Electricity Regulation Amendment Act (2024)</strong> – Amendments creating a competitive electricity market and independent transmission operator</li>
+                    <li>• <strong>Carbon Tax Act (2019) & Carbon Budget System</strong> – South Africa's carbon pricing mechanism with scheduled rate increases and phased reduction of allowances</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Clean Energy Programs</h4>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• <strong>Hydrogen Society Roadmap (2021) & Green Hydrogen Strategy</strong> – National strategy for developing a green hydrogen economy with 500 kt H₂ by 2030 target</li>
+                    <li>• <strong>Just Energy Transition Investment Plan (2023–2027)</strong> – Investment plan detailing financial needs for South Africa's coal-to-clean transition, backed by $8.5B JETP</li>
+                    <li>• <strong>Renewable Energy IPP Procurement Programme (REIPPPP)</strong> – Ongoing program of competitive bid windows for procuring renewable energy from private developers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Newsletter Signup */}
+        <EmailSignup />
+      </div>
+    );
+  }
+
   // Default legislation content for other countries
   return (
     <div className="max-w-6xl mx-auto space-y-8">

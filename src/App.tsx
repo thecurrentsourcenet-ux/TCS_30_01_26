@@ -29,7 +29,6 @@ const UruguayInfographic = lazy(() => import('./pages/infographics/Uruguay'));
 const GreenlandInfographic = lazy(() => import('./pages/infographics/Greenland'));
 const ThankYou = lazy(() => import('./pages/ThankYou'));
 const DavosReport = lazy(() => import('./pages/DavosReport'));
-const SouthAfricaPolicy = lazy(() => import('./pages/policy/SouthAfrica'));
 
 // Load Layout immediately since it's needed for all routes
 import Layout from './components/Layout';
@@ -62,7 +61,6 @@ function App() {
                   <Route path="/infographics/greenland-strategic-resources-energy-transition" element={<GreenlandInfographic />} />
                   <Route path="/infographics/rwanda-2030-clean-energy-climate" element={<RwandaInfographic />} />
                   <Route path="/infographics/uruguay-renewable-energy-success" element={<UruguayInfographic />} />
-                  <Route path="/policy/south-africa" element={<SouthAfricaPolicy />} />
                   <Route path="/category/:category" element={<CategoryPage />} />
                   <Route path="/category/:category/:subcategory" element={<CategoryPage />} />
                   <Route path="/articles/:slug" element={<ArticlePage />} />

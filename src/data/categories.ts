@@ -13,6 +13,7 @@ export const countries: LegislationCountry[] = [
   { id: 'in', name: 'India', code: 'IN' },
   { id: 'vn', name: 'Vietnam', code: 'VN' },
   { id: 'br', name: 'Brazil', code: 'BR' },
+  { id: 'za', name: 'South Africa', code: 'ZA' },
 ];
 
 export const categories: CategoryStructure[] = [
